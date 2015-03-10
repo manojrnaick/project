@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+ <script type="text/javascript">
+        function change() {
+            document.getElementById("mytext").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext1").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext2").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext3").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext4").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext5").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext6").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext7").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext8").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext9").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext10").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext11").innerHTML = document.getElementById("Text1").value;	
+		document.getElementById("mytext12").innerHTML = document.getElementById("Text1").value;
+	    document.getElementById("mytext13").innerHTML = document.getElementById("Text1").value;
+        }
+
+	
+    </script>
+</head>
+<body>
+
+<div data-role="page" id="pageone" style="background-color:rgb(192, 200, 224)">
+  <div data-role="header">
+    <h1>Welcome To <span id="mytext">My</span> Homepage</h1>
+<div data-role="navbar">
+    <ul>
+      <li><a href="#pageone">Home</a></li>
+      <li><a href="#pagetwo">Page Two</a></li>
+      <li><a href="#pagethree">Page Three</a></li>
+    </ul>
+  </div>
+  </div>
+    <div data-role="main" class="ui-content">
+    <p>Welcome! If you type in text box, your header, footer, imgae title while popup will change.</p>
+
+<table style="width:100%">
+            <tr>
+                <td style="width:50%; text-align:right">
+	Enter your name to change everything for you.
+                </td>
+                <td style="width:50%; text-align:center">
+	<input id="Text1"  type="text" oninput="change()" />
+                </td>
+            </tr>
+
+	    <tr>
+                <td style="width:50%; text-align:center">
+<p><span id="mytext5">My</span> Clock</p>
+<a href="#myPopup" data-rel="popup" data-position-to="window">
+    <img src="images\rolex.jpg" alt="Rolex Clock" style="width:200px;"></a><br>
+    Click on the image to popup
+    <div data-role="popup" id="myPopup">
+      <p>This is <span id="mytext1">My</span> clock!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images\rolex.jpg" style="width:800px" alt="Rolex Clock">
+    </div>
+                </td>
+		<td style="width:50%; text-align:center">
+<p><span id="mytext6">My</span> Golden Clock</p>
+<a href="#myPopup2" data-rel="popup" data-position-to="window">
+    <img src="images\golden.jpg" alt="Golden Clock" style="width:200px;"></a><br>
+    Click on the image to popup
+    <div data-role="popup" id="myPopup2">
+      <p>This is <span id="mytext7">My</span> clock!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images\golden.jpg" style="width:800px" alt="Golden Clock">
+    </div>
+		</td>
+            </tr>
+</table>
+</div>
+<a href="#pagetwo" class="ui-btn ui-btn-inline">Page Two</a>
+<a href="#pagethree" class="ui-btn ui-btn-inline">Page Three</a>	
+  <div data-role="footer">
+    <h1><span id="mytext2">My</span> App</h1>
+  </div>
+</div> 
+
+
+<div data-role="page" id="pagetwo" style="background-color:rgb(192, 200, 224)">
+  <div data-role="header">
+
+<a href="#pageone" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+
+    <h1>Welcome To <span id="mytext3">My</span> Homepage</h1>
+<div data-role="navbar">
+    <ul>
+      <li><a href="#pageone">Page One</a></li>
+      <li><a href="#pagethree">Page Three</a></li>
+    </ul>
+  </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>This is Page Two. </p>
+
+
+<p><span id="mytext8">My</span> Silver Clock</p>
+<a href="#myPopup3" data-rel="popup" data-position-to="window">
+    <img src="images\silver.jpg" alt="Golden Clock" style="width:200px;"></a><br>
+    Click on the image to popup
+    <div data-role="popup" id="myPopup3">
+      <p>This is <span id="mytext9">My</span> clock!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images\silver.jpg" style="width:800px" alt="Golden Clock">
+    </div>
+
+
+    <p><a href="#pageone" class="ui-btn ui-btn-inline">Go to Page One</a>
+	<a href="#pagethree" class="ui-btn ui-btn-inline">Go to Page Three</a>
+     </p>
+  </div>
+  <div data-role="footer">
+    <h1><span id="mytext4">My</span> App</h1>
+  </div>
+</div> 
+
+
+
+
+<div data-role="page" id="pagethree" style="background-color:rgb(192, 200, 224)">
+  <div data-role="header">
+
+<a href="#pageone" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+
+    <h1>Welcome To <span id="mytext12">My</span> Homepage</h1>
+<div data-role="navbar">
+    <ul>
+      <li><a href="#pageone">Home</a></li>
+      <li><a href="#pagetwo">Page Two</a></li>
+    </ul>
+  </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>This is Page Three.</p>
+
+
+
+<p><span id="mytext10">My</span> Old Clock</p>
+<a href="#myPopup4" data-rel="popup" data-position-to="window">
+    <img src="images\old.jpg" alt="Old Clock" style="width:200px;"></a><br>
+    Click on the image to popup
+    <div data-role="popup" id="myPopup4">
+      <p>This is <span id="mytext11">My</span> old clock!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images\old.jpg" style="width:800px" alt="Golden Clock">
+    </div>
+
+
+
+    <p><a href="#pageone" class="ui-btn ui-btn-inline">Go to Page One</a>
+	<a href="#pagetwo" class="ui-btn ui-btn-inline">Go to Page Two</a>
+     </p>
+   
+  </div>
+  <div data-role="footer">
+    <h1><span id="mytext13">My</span> App</h1>
+  </div>
+</div> 
+
+
+
+
+
+
+</body>
+</html>
